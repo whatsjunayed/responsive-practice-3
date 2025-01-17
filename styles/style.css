@@ -226,7 +226,7 @@ footer span {
 
 /* media query */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   main {
     width: 90%;
     margin: 0 auto;
@@ -236,7 +236,7 @@ footer span {
   }
   .section-title,
   .details-title,
-  .application-content h1 {
+  .application-content h1,footer h1 {
     font-size: 2rem;
   }
   .hero {
@@ -261,11 +261,10 @@ footer span {
     display: none;
   }
   .mission-details {
-    row-gap: 5px;
+    row-gap: 30px;
   }
   .details-container {
     flex-direction: column;
-    gap: 30px;
   }
 
   .details-container:nth-child(2) {
@@ -278,5 +277,59 @@ footer span {
 
   .details-image {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero img {
+    width: 45%;
+  }
+  .section-title,
+  .details-title,
+  .application-content h1 {
+    font-size: 2.5rem;
+  }
+  p, footer p {
+    font-size: medium;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .hero {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: small;
+  }
+  .mission-icon,
+  .shape,
+  .icon,
+  .shape2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+    p, footer p {
+    font-size: medium;
+  }
+  .mission-icon,
+  .shape,
+  .icon,
+  .shape2 {
+    display: none;
   }
 }
